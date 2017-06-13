@@ -23,6 +23,9 @@ public class forEachLoop {
 		}
 		System.out.println("Java8 forEach in loop.");
 		p1.forEach((p) -> System.out.println(p.getFirstName()));
+		
+		System.out.println("Java8 forEach in loop with Method reference.");
+		p1.forEach(System.out::println);
 	}
 
 }
