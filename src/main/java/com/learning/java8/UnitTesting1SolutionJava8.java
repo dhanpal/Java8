@@ -3,6 +3,7 @@ package com.learning.java8;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class UnitTesting1SolutionJava8 {
 
@@ -30,7 +31,7 @@ public class UnitTesting1SolutionJava8 {
 
 		printWithCondition(p1, o1 -> o1.getFirstName().startsWith("D"));
 	}
-	private static void printWithCondition(List<Person> p1, Condition c) {
+	private static void printWithCondition(List<Person> p1, Predicate<Person> c) {
 		for(Person p : p1){
 			if(c.test(p))
 				System.out.println(p);
