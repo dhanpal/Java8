@@ -8,9 +8,11 @@ public class TestOverridding {
 		
 		Horse horse = new Horse();
 		horse.eat();
+		horse.eat("grass");
 		
 		Animal obj = new Horse();
 		obj.eat();
+		
 		
 	}
 }
@@ -24,5 +26,9 @@ class Animal{
 class Horse extends Animal{
 	public void eat(){
 		System.out.println("Horse eats");
+	}
+	
+	public void eat(String input){
+		System.out.println("Horse eats : " + input);
 	}
 }
