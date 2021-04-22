@@ -1,6 +1,6 @@
 package food;
 
-import com.learning.java8.Child;
+import com.learning.java.basic.Child;
 
 public class SecondChild {
 	public void doStuff(){

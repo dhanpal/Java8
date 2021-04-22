@@ -1,6 +1,6 @@
 package food;
 
-import com.learning.java8.Parent;
+import com.learning.java.basic.Parent;
 
 public class ThiedChild extends Parent{
 	
